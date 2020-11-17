@@ -11,16 +11,17 @@ var multi5 = "Buzz";
 
 var multiBoth = "FizzBuzz";
 
-for ( var i = 1; i <= 100; i++) {
-     
+
+for ( var i = 1; i <= 100; i++ ) {
+
      if ( (i % 3 == 0) && (i % 5 == 0) ) {
-          console.log(multiBoth);
+          document.getElementById("number-list").innerHTML += "<li>" + multiBoth + "</li>"
      } else if (i % 3 == 0) {
-          console.log(multi3);
+          document.getElementById("number-list").innerHTML += "<li>" + multi3 + "</li>";
      } else if (i % 5 == 0) {
-          console.log(multi5);
+          document.getElementById("number-list").innerHTML += "<li>" + multi5 + "</li>";
      } else {
-          console.log(i);
+          document.getElementById("number-list").innerHTML += "<li>" + i + "</li>";
      }
 
 }
